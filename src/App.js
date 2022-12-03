@@ -3,7 +3,7 @@ import HomeScreen from "./screens/HomeScreen";
 import './App.css';
 import LoginScreen from "./screens/LoginScreen";
 import ProfileScreen from "./screens/ProfileScreen";
-import {BrowserRouter as Router, Routes, Route,} from "react-router-dom";
+import {HashRouter, Routes, Route,} from "react-router-dom";
 import { auth } from './firebase';
 import { useDispatch, useSelector } from 'react-redux';
 import { login, logout, selectUser } from './features/userSlice';
@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      <HashRouter>
         {!user ? (
           <LoginScreen />
         ) : (
@@ -42,7 +42,7 @@ function App() {
           <Route path="/" element={<HomeScreen />} />
         </Routes>
         )}
-      </Router>
+      </HashRouter>
     </div>
   );
 }

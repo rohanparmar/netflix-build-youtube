@@ -1,7 +1,7 @@
 {
   "name": "netflix-build-youtube",
   "version": "0.1.0",
-  "homepage": "https://rohanparmar.github.io/netflix-build-youtube",
+  "homepage": "https://rohanparmar.github.io/netflix-build-youtube/#",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.0",
